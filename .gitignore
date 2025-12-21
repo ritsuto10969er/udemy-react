@@ -1,0 +1,12 @@
+# dependencies
+node_modules/
+
+# build
+dist/
+build/
+
+# OS / editor
+__MACOSX/
+.DS_Store
+Thumbs.db
+.vscode/
