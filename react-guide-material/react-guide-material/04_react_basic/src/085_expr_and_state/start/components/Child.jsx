@@ -6,9 +6,14 @@
 import "./Child.css";
 
 const Child = () => {
+  const hello = () => 'Hello World';
+  const greet = hello();
+  const a = 'a';
   return (
     <div className="component">
       <h3>式と文</h3>
+      <p>{greet}</p>
+      <p>{a === 'a' ? 'これは式です' : 'これは文ではありません'}</p>
     </div>
   );
 };
