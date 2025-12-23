@@ -1,15 +1,19 @@
 import Profile from "./components/Profile";
 import Container from "./components/Container";
+// import { Children } from "react";
 
 const profile = [
-  { name: "Takashi", age: 19, country: "Japan", color: "green" },
-  { name: "Jane", age: 28, country: "UK", color: "blue" },
+  { name: "Takashi", age: 19, country: "Japan" },
+  { name: "Jane", age: 28, country: "UK", color: "red" },
 ];
 
 const Example = () => {
   return (
     <div>
-      <Container title="Childrenとは？" />
+      <Container title="Childrenとは？" 
+      firstChild = {<Profile {...profile[0]} />}
+      lastChild = {<Profile {...profile[1]} />}
+      />        
     </div>
   );
 };
